@@ -1,0 +1,7 @@
+,step,Command being timed,User time (seconds),System time (seconds),Percent of CPU this job got,Elapsed (wall clock) time (h:mm:ss or m:ss),Average shared text size (kbytes),Average unshared data size (kbytes),Average stack size (kbytes),Average total size (kbytes),Maximum resident set size (kbytes),Average resident set size (kbytes),Major (requiring I/O) page faults,Minor (reclaiming a frame) page faults,Voluntary context switches,Involuntary context switches,Swaps,File system inputs,File system outputs,Socket messages sent,Socket messages received,Signals delivered,Page size (bytes),Exit status
+0,,,,,,,,,,,,,,,,,,,,,,,,
+1,1,"""cd-hit-est -i test_file.fasta -d 0 -o ./test_file.fasta.cd -c 0.95 -G 0 -n 9 -r 0 -g 1 -A 40 -p 1 -M 0 -T 4""",4,0,312,0:01,0,0,0,0,77576,0,0,18649,20,19159,0,0,4160,0,0,0,4096,0
+2,3,"""RepeatMasker -pa 4 -s -lib ./arthro_ES_ND_PV_classified.fa -dir . -x test_file.fasta.cd""",992,6,387,4:17,0,0,0,0,150764,0,0,634230,3076,125358,0,0,483312,0,0,0,4096,0
+3,4,"""RepeatProteinMask -engine ncbi test_file.fasta.cd.masked""",443,6,108,6:56,0,0,0,0,150696,0,0,614321,30627,39001,0,0,441640,0,0,0,4096,0
+4,5,"""Rscript RAD_TE_summary.R test_file.fasta.cd.summary2 test_file.fasta.cd.out test_file.fasta.cd.masked.annot""",2,0,100,0:03,0,0,0,0,263016,0,0,109856,63,62,0,0,8,0,0,0,4096,0
+5,"""all""","""./TERAD1 test_file.fasta 4 ./arthro_ES_ND_PV_classified.fa none""",1446,13,214,11:21,0,0,0,0,263016,0,0,1425849,34366,184236,0,0,930896,0,0,0,4096,0
