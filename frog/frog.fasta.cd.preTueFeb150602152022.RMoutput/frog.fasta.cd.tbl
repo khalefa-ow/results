@@ -1,0 +1,59 @@
+==================================================
+file name: frog.fasta.cd            
+sequences:        127979
+total length:   17636080 bp  (17636080 bp excl N/X-runs)
+GC level:         46.49 %
+bases masked:     348860 bp ( 1.98 %)
+==================================================
+               number of      length   percentage
+               elements*    occupied  of sequence
+--------------------------------------------------
+Retroelements          759        55341 bp    0.31 %
+   SINEs:                2          130 bp    0.00 %
+   Penelope             50         3590 bp    0.02 %
+   LINEs:              323        19621 bp    0.11 %
+    CRE/SLACS            0            0 bp    0.00 %
+     L2/CR1/Rex         57         3291 bp    0.02 %
+     R1/LOA/Jockey      35         2076 bp    0.01 %
+     R2/R4/NeSL         20         1077 bp    0.01 %
+     RTE/Bov-B          41         2316 bp    0.01 %
+     L1/CIN4            30         1694 bp    0.01 %
+   LTR elements:       434        35590 bp    0.20 %
+     BEL/Pao            36         1861 bp    0.01 %
+     Ty1/Copia          27         1406 bp    0.01 %
+     Gypsy/DIRS1       364        31793 bp    0.18 %
+       Retroviral        2          198 bp    0.00 %
+
+DNA transposons        734        48391 bp    0.27 %
+   hobo-Activator      330        17780 bp    0.10 %
+   Tc1-IS630-Pogo      304        23325 bp    0.13 %
+   En-Spm                0            0 bp    0.00 %
+   MuDR-IS905            0            0 bp    0.00 %
+   PiggyBac              9          857 bp    0.00 %
+   Tourist/Harbinger    16         1596 bp    0.01 %
+   Other (Mirage,        2           21 bp    0.00 %
+    P-element, Transib)
+
+Rolling-circles         15          812 bp    0.00 %
+
+Unclassified:          119         8135 bp    0.05 %
+
+Total interspersed repeats:      111867 bp    0.63 %
+
+
+Small RNA:               9          568 bp    0.00 %
+
+Satellites:              3          277 bp    0.00 %
+Simple repeats:       4841       208225 bp    1.18 %
+Low complexity:        604        27111 bp    0.15 %
+==================================================
+
+* most repeats fragmented by insertions or deletions
+  have been counted as one element
+                                                      
+
+RepeatMasker version 4.1.2-p1 , sensitive mode
+                                   
+run with rmblastn version 2.11.0+
+The query was compared to classified sequences in ".../arthro_ES_ND_PV_classified.fa"
+FamDB: 

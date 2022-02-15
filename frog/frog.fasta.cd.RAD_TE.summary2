@@ -1,0 +1,2 @@
+sample,lib.depth,DNA,RC,LTR,LINE,SINE,RNA,UO,Sim,Sat,LC,DNA.int,RC.int,LTR.int,LINE.int,SINE.int,SS.int,RNA.int,UO.int,DNA.ext,RC.ext,LTR.ext,LINE.ext,SINE.ext,SS.ext,RNA.ext,UO.ext,TE,TE.int,TE.ext,NoTE
+frog.fasta.cd,1150772,0,0,0,0,0,0,0,0.04684855036445099,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.04684855036445099,0,0,0,0,0,0
