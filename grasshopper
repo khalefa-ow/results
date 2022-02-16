@@ -1,7 +1,7 @@
 ,step,Command being timed,User time (seconds),System time (seconds),Percent of CPU this job got,Elapsed (wall clock) time (h:mm:ss or m:ss),Average shared text size (kbytes),Average unshared data size (kbytes),Average stack size (kbytes),Average total size (kbytes),Maximum resident set size (kbytes),Average resident set size (kbytes),Major (requiring I/O) page faults,Minor (reclaiming a frame) page faults,Voluntary context switches,Involuntary context switches,Swaps,File system inputs,File system outputs,Socket messages sent,Socket messages received,Signals delivered,Page size (bytes),Exit status
 0,,,,,,,,,,,,,,,,,,,,,,,,
-1,1,"""cd-hit-est -i grasshopper.fasta -d 0 -o ./grasshopper.fasta.cd -c 0.95 -G 0 -n 9 -r 0 -g 1 -A 40 -p 1 -M 0 -T 1""",12493,2,99,3:28:18,0,0,0,0,1562868,0,0,445709,26,65007,0,256104,742392,0,0,0,4096,0
-2,3,"""RepeatMasker -pa 1 -s -lib ./arthro_ES_ND_PV_classified.fa -dir . -x grasshopper.fasta.cd""",13048,169,308,1:11:24,0,0,0,0,757548,0,0,28513377,143453,449876,0,16,9590528,0,0,0,4096,0
-3,4,"""RepeatProteinMask -engine ncbi grasshopper.fasta.cd.masked""",5445,159,105,1:28:32,0,0,0,0,570624,0,0,23401574,490177,522208,0,16,8782512,0,0,0,4096,0
-4,5,"""Rscript RAD_TE_summary.R grasshopper.fasta.cd.summary2 grasshopper.fasta.cd.out grasshopper.fasta.cd.masked.annot""",2,0,100,0:03,0,0,0,0,221184,0,0,99916,54,80,0,0,8,0,0,0,4096,0
-5,"""all""","""./TERAD1 grasshopper.fasta 1 ./arthro_ES_ND_PV_classified.fa none""",30997,332,141,6:08:24,0,0,0,0,1562868,0,0,52527800,648204,1040276,0,256136,19118584,0,0,0,4096,0
+1,1,"""cd-hit-est -i grasshopper.fasta -d 0 -o ./grasshopper.fasta.cd -c 0.95 -G 0 -n 9 -r 0 -g 1 -A 40 -p 1 -M 0 -T 2""",12785,3,199,1:47:00,0,0,0,0,1667464,0,0,471982,634,55885,0,0,742392,0,0,0,4096,0
+2,3,"""RepeatMasker -pa 2 -s -lib ./arthro_ES_ND_PV_classified.fa -dir . -x grasshopper.fasta.cd""",13457,192,368,1:01:41,0,0,0,0,757616,0,0,28504889,140992,1288984,0,0,9595296,0,0,0,4096,0
+3,4,"""RepeatProteinMask -engine ncbi grasshopper.fasta.cd.masked""",5503,162,105,1:29:31,0,0,0,0,570568,0,0,23414682,490854,527518,0,0,8782376,0,0,0,4096,0
+4,5,"""Rscript RAD_TE_summary.R grasshopper.fasta.cd.summary2 grasshopper.fasta.cd.out grasshopper.fasta.cd.masked.annot""",2,0,100,0:02,0,0,0,0,221360,0,0,99917,56,61,0,0,8,0,0,0,4096,0
+5,"""all""","""./TERAD1 grasshopper.fasta 2 ./arthro_ES_ND_PV_classified.fa none""",31755,358,207,4:18:22,0,0,0,0,1667464,0,0,52558699,647207,1875652,0,0,19123216,0,0,0,4096,0
