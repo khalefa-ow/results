@@ -1,0 +1,7 @@
+,step,Command being timed,User time (seconds),System time (seconds),Percent of CPU this job got,Elapsed (wall clock) time (h:mm:ss or m:ss),Average shared text size (kbytes),Average unshared data size (kbytes),Average stack size (kbytes),Average total size (kbytes),Maximum resident set size (kbytes),Average resident set size (kbytes),Major (requiring I/O) page faults,Minor (reclaiming a frame) page faults,Voluntary context switches,Involuntary context switches,Swaps,File system inputs,File system outputs,Socket messages sent,Socket messages received,Signals delivered,Page size (bytes),Exit status
+0,,,,,,,,,,,,,,,,,,,,,,,,
+1,1,"""cd-hit-est -i grasshopper.fasta -d 0 -o ./grasshopper.fasta.cd -c 0.95 -G 0 -n 9 -r 0 -g 1 -A 40 -p 1 -M 0 -T 4""",22172,6,397,1:33:02,0,0,0,0,1768380,0,0,497238,804,594189,0,0,742392,0,0,0,4096,0
+2,3,"""RepeatMasker -pa 4 -s -lib ./arthro_ES_ND_PV_classified.fa -dir . -x grasshopper.fasta.cd""",13968,221,392,1:00:17,0,0,0,0,757644,0,0,28468222,138639,2043642,0,0,9638984,0,0,0,4096,0
+3,4,"""RepeatProteinMask -engine ncbi grasshopper.fasta.cd.masked""",5490,164,105,1:29:16,0,0,0,0,570316,0,0,23414485,481662,523350,0,0,8782160,0,0,0,4096,0
+4,5,"""Rscript RAD_TE_summary.R grasshopper.fasta.cd.summary2 grasshopper.fasta.cd.out grasshopper.fasta.cd.masked.annot""",2,0,99,0:02,0,0,0,0,221372,0,0,99926,59,85,0,0,8,0,0,0,4096,0
+5,"""all""","""./TERAD1 grasshopper.fasta 4 ./arthro_ES_ND_PV_classified.fa none""",41643,393,288,4:02:47,0,0,0,0,1768380,0,0,52547093,635701,3164335,0,0,19166688,0,0,0,4096,0
