@@ -1,7 +1,0 @@
-,step,Command being timed,User time (seconds),System time (seconds),Percent of CPU this job got,Elapsed (wall clock) time (h:mm:ss or m:ss),Average shared text size (kbytes),Average unshared data size (kbytes),Average stack size (kbytes),Average total size (kbytes),Maximum resident set size (kbytes),Average resident set size (kbytes),Major (requiring I/O) page faults,Minor (reclaiming a frame) page faults,Voluntary context switches,Involuntary context switches,Swaps,File system inputs,File system outputs,Socket messages sent,Socket messages received,Signals delivered,Page size (bytes),Exit status
-0,,,,,,,,,,,,,,,,,,,,,,,,
-1,1,"""cd-hit-est -i frog.fasta -d 0 -o ./frog.fasta.cd -c 0.95 -G 0 -n 9 -r 0 -g 1 -A 40 -p 1 -M 0 -T 1""",391,0,99,6:31,0,0,0,0,353948,0,12,93830,19,974,0,3448,120808,0,0,0,4096,0
-2,3,"""RepeatMasker -pa 1 -s -lib ./arthro_ES_ND_PV_classified.fa -dir . -x frog.fasta.cd""",21167,167,187,3:10:01,0,0,0,0,286072,0,234,20348421,28692,420240,0,51824,6645320,0,0,0,4096,0
-3,4,"""RepeatProteinMask -engine ncbi frog.fasta.cd.masked""",23767,230,105,6:20:38,0,0,0,0,1420184,0,393,17923130,1074395,151183,0,641712,6610872,0,0,0,4096,0
-4,5,"""Rscript RAD_TE_summary.R frog.fasta.cd.summary2 frog.fasta.cd.out frog.fasta.cd.masked.annot""",4,0,89,0:05,0,0,0,0,303444,0,110,121397,447,187,0,54552,8,0,0,0,4096,0
-5,"""all""","""./TERAD1 frog.fasta 1 ./arthro_ES_ND_PV_classified.fa none""",45406,399,131,9:38:32,0,0,0,0,1420184,0,849,38592444,1136123,590771,0,810880,13475600,0,0,0,4096,0
